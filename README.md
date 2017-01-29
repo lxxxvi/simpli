@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/lxxxvi/simpli/badges/gpa.svg)](https://codeclimate.com/github/lxxxvi/simpli)
+[![Test Coverage](https://codeclimate.com/github/lxxxvi/simpli/badges/coverage.svg)](https://codeclimate.com/github/lxxxvi/simpli/coverage)
+
 # simpli
 
 * simpli is simply a wrapper.
