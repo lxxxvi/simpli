@@ -5,7 +5,7 @@ module Simpli
     class << self
       def find(start_dir)
         script_finder = Simpli::ScriptFinder.new
-        dir_path = start_dir || File.expand_path(Dir.pwd)
+        dir_path = File.expand_path(start_dir || Dir.pwd)
         script_finder.upsearch(dir_path)
       end
     end
@@ -22,7 +22,7 @@ module Simpli
     end
 
     def search_in_parent_directory(dir_path)
-      parent_directory = File.expand_path(Dir.glob("#{dir_path}/../").first)
+      parent_directory = File.expand_path('..', dir_path)
       upsearch(parent_directory)
     end
   end
