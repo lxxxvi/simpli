@@ -1,5 +1,4 @@
 [![Code Climate](https://codeclimate.com/github/lxxxvi/simpli/badges/gpa.svg)](https://codeclimate.com/github/lxxxvi/simpli)
-[![Test Coverage](https://codeclimate.com/github/lxxxvi/simpli/badges/coverage.svg)](https://codeclimate.com/github/lxxxvi/simpli/coverage)
 [![Build Status](https://travis-ci.org/lxxxvi/simpli.svg?branch=master)](https://travis-ci.org/lxxxvi/simpli)
 
 # simpli
