@@ -2,7 +2,7 @@ require 'test_helper'
 
 module Simpli
   class ScriptFinderTest < Minitest::Test
-    TEST_DIR = File.expand_path(File.join(__dir__))
+    TEST_DIR = File.expand_path("#{File.dirname(__FILE__)}/..")
     TEST_PROJECTS_DIR = "#{TEST_DIR}/projects".freeze
     ALPHA_PROJECT_DIR = "#{TEST_PROJECTS_DIR}/alpha".freeze
     BRAVO_PROJECT_DIR = "#{TEST_PROJECTS_DIR}/bravo".freeze
