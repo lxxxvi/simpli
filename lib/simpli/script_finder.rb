@@ -3,9 +3,9 @@ module Simpli
     SIMPLY_SCRIPT_RELATIVE_PATH = 'bin/simply'.freeze
 
     class << self
-      def find(start_dir)
+      def find(start_dir = Dir.pwd)
         script_finder = Simpli::ScriptFinder.new
-        dir_path = File.expand_path(start_dir || Dir.pwd)
+        dir_path = File.expand_path(start_dir)
         script_finder.upsearch(dir_path)
       end
     end

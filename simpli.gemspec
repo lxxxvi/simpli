@@ -14,5 +14,5 @@ Gem::Specification.new do |s|
   )
   s.homepage = 'https://rubygems.org/gems/simpli'
   s.license = 'Apache-2.0'
-  s.executables << 'simpli'
+  s.executables << 'simply'
 end
