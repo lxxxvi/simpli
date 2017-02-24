@@ -1,7 +1,7 @@
 module Simpli
   class ScriptFinder
     def initialize(relative_script_path)
-      @relative_script_path
+      @relative_script_path = relative_script_path
     end
 
     def upsearch(dir_path)
