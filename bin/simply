@@ -2,10 +2,11 @@
 
 require 'simpli'
 
-simply_script_path = Simpli.locate_script('./simply')
+simply_script_path = Simpli.locate_script('./bin/simply.rb')
 
 raise '***ERROR: Simply script could not be found' unless simply_script_path
 
-command = [simply_script_path, ARGV].flatten.join(' ')
+command = ["ruby", simply_script_path, ARGV].flatten.join(' ')
 
+puts "# simpli: executing #{command} "
 exec(command)
