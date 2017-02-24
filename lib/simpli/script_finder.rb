@@ -12,7 +12,8 @@ module Simpli
     private
 
     def path_to_simply_script(dir_path)
-      Dir.glob("#{dir_path}/#{@relative_script_path}").first
+      path = Dir.glob("#{dir_path}/#{@relative_script_path}").first
+      path unless path && File.directory?(path)
     end
 
     def search_in_parent_directory(dir_path)
