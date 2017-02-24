@@ -2,10 +2,10 @@
 
 require 'simpli'
 
-simply_script_path = Simpli.locate_simply_script
+simply_script_path = Simpli.locate_script('./simply')
 
 raise '***ERROR: Simply script could not be found' unless simply_script_path
 
 command = [simply_script_path, ARGV].flatten.join(' ')
-puts "calling '#{command}'"
+
 exec(command)
