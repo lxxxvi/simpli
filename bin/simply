@@ -2,7 +2,7 @@
 
 require 'simpli'
 
-simply_script_path = Simpli.locate_script('./bin/simply.rb')
+simply_script_path = Simpli.locate_script('./bin/simply')
 
 raise '***ERROR: Simply script could not be found' unless simply_script_path
 
